@@ -1,0 +1,85 @@
+/*
+Theme Name: 24 Child
+Theme URI: tt4-child
+Author: Jemwel Odo
+Author URI: 
+Description: A child theme of Twenty Twenty-Four Theme.
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 5.7
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentytwentyfour
+Text Domain: tt4-child
+Tags: 
+*/
+
+/**************----RESPONSIVENESS----*****************/
+@media (max-width: 782px) {
+  .reverse-mobile {
+    flex-direction: column-reverse;
+  }
+}
+
+/**************----CARDS----*****************/
+.card-hover {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px) scale(1.025);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post-card {
+  text-decoration: none;
+}
+
+/**************----BUTTON----*****************/
+.wp-block-button__link:hover {
+  background-color: #041e80 !important;
+}
+
+.wp-block-button.is-style-outline > .wp-block-button__link:hover {
+  background-color: #e5ebf9 !important;
+  color: #082cb2 !important;
+  border-color: #082cb2 !important;
+}
+
+.custom-button {
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  background-color: #041e80 !important;
+}
+
+/**************----TOP NAVIGATION BAR----*****************/
+
+.header-navigation ul li:not(.about-menu) a,
+.header-navigation li.about-menu {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.header-navigation li.about-menu ul.about-menu a {
+  padding: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.header-navigation li:hover {
+  background-color: #e5ebf9;
+}
+
+.header-navigation ul li a:hover {
+  text-decoration: none !important;
+}
+
+ul.about-menu {
+  border: none !important;
+}
